@@ -15,7 +15,7 @@
 
 .App-header {
     width: 100%;
-    background-color: #282c34;
+    background-color: #23c8bd;
     min-height: 40vh;
     display: flex;
     flex-direction: column;
@@ -36,4 +36,31 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.header-text {
+    color: white;
+}
+
+.face-img {
+    width: 100px;
+    height: 100px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-rect {
+    width: 620px;
+    height: 200px;
+    background-color: #ff0000;
+    align-items: center;
+}
+
+.ra_pic {
+    width: 400px;
+    height: 700px;
 }
