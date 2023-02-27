@@ -41,6 +41,7 @@ function App(): JSX.Element {
                             adding an image in here just to see that it would
                             stay on its own half of the screen also. We will
                             see.
+                            <div className="red-rect"></div>
                         </Col>
                     </Row>
                 </Container>
