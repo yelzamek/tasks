@@ -23,17 +23,11 @@ function App(): JSX.Element {
                     <li>butter</li>
                 </ul>
             </div>
-            Ordered List:
-            <div className="list">
-                <ol>
-                    <li>first</li>
-                    <li>second</li>
-                    <li>third</li>
-                </ol>
-            </div>
             <img className="face-img" src={yasmin_face} alt="my linkedin pfp" />
             {/* Doesn't actually log hello world anywhere... */}
-            <Button>Log Hello World={() => console.log("Hello World")}</Button>
+            <Button onClick={() => console.log("Hello World!")}>
+                Log Hello World
+            </Button>
             <div>
                 <Container>
                     <Row>
@@ -48,12 +42,6 @@ function App(): JSX.Element {
                             adding an image in here just to see that it would
                             stay on its own half of the screen also. We will
                             see.
-                            <div className="red-rect"></div>
-                            <img
-                                className="ra_pic"
-                                src={ra_pic}
-                                alt="photo I use as an RA"
-                            />
                         </Col>
                     </Row>
                 </Container>
