@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
 import yasmin_face from "./img/yasmin-face.jpg";
-import ra_pic from "./img/ra_pic.jpg";
 
 function App(): JSX.Element {
     return (
