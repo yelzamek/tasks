@@ -44,13 +44,15 @@ export function isCorrect(question: Question, answer: string): boolean {
  * be exactly one of the options.
  */
 export function isValid(question: Question, answer: string): boolean {
-    let truth = true;
     if (question.type === "multiple_choice_question") {
-        question.options.includes(answer) ? (truth = true) : (truth = false);
+        if (question.options.includes(answer)) {
+            return true;
+        } else {
+            return false;
+        }
     } else {
-        truth = false;
+        return true;
     }
-    return truth;
 }
 
 /**
@@ -81,7 +83,25 @@ export function toShortForm(question: Question): string {
  * Check the unit tests for more examples of what this looks like!
  */
 export function toMarkdown(question: Question): string {
-    return;
+    if (question.type === "multiple_choice_question") {
+        return (
+            "# " +
+            question.name +
+            "\n" +
+            question.body +
+            "\n" +
+            "- " +
+            question.options[0] +
+            "\n" +
+            "- " +
+            question.options[1] +
+            "\n" +
+            "- " +
+            question.options[2]
+        );
+    } else {
+        return "# " + question.name + "\n" + question.body;
+    }
 }
 
 /**
