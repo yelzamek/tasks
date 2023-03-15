@@ -1,7 +1,16 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
+<<<<<<< HEAD
 import yasmin_face from "./img/yasmin-face.jpg";
+=======
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
+>>>>>>> upstream/task-state
 
 function App(): JSX.Element {
     return (
@@ -10,6 +19,7 @@ function App(): JSX.Element {
                 UD CISC275 with React Hooks and TypeScript
                 <h1 className="header-text">This is header text!</h1>
             </header>
+<<<<<<< HEAD
             <p>
                 Hello World! Edit <code>src/App.tsx</code> and save. This page
                 will automatically reload. Yasmeen Hello World
@@ -46,6 +56,20 @@ function App(): JSX.Element {
                     </Row>
                 </Container>
             </div>
+=======
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
+>>>>>>> upstream/task-state
         </div>
     );
 }
